@@ -1,7 +1,7 @@
 # FOMC-Analysis
 
 
-Introduction
+## Introduction
 
 From the dawn of ancient civilizations, expectations have fundamentally shaped the decision-making processes of consumers, investors, governments, and other economic actors. In the annals of classical thought, Aristotle alludes to the prescient activities of Thales of Miletus, who, through “precise” astronomical observations, anticipated a bountiful olive harvest. This prediction allowed Thales to capitalize on the future scarcity of olive presses, thereby influencing market prices. Such anecdotes underscore the enduring significance of expectations in economic behavior.
 
@@ -17,7 +17,7 @@ Conversely, direct communication by the Federal Reserve carries inherent risks. 
 
 Therefore, it is expected that the Federal Reserve will interpret its own signaling from the perspective of economic agents. With the proliferation of Large Language Models (LLMs) and Natural Language Processing (NLP) in financial markets for tasks ranging from predicting stock prices to analyzing policymakers’ speeches, the Fed logically would scrutinize its communications using exactly the same tools..
 
-Relevant Research
+## Relevant Research
 
 Natural Language Processing (NLP) has become a pivotal technique in analyzing signaling, even detecting nuances imperceptible to humans. While its primary application has been in predicting stock price fluctuations through web scraping, the focus is increasingly shifting towards anticipating Federal Reserve decisions.
 
@@ -25,7 +25,7 @@ One of the earliest explorations of using Natural Language Processing (NLP) in f
 
 A clear example of this is Doh et al. (2021), who compared Federal Reserve statements to alternative statements with slightly altered tones, demonstrating that NLP models can detect even subtle differences. Kim and Gallen (2023) conducted a study to assess the precision of these models by manually labeling a sample of Fed statements, finding that different models produced varying results. There have also been efforts to adapt existing NLP models to better interpret central bank language, with CentralBankRoBERTa (Pfeifer & Marohl, 2023) being a notable example.
 
-Methodology 
+## Methodology 
 
 To determine whether the Federal Reserve is adapting its signaling approach and modifying the formulation of its official reports and speeches in response to the increasing use of NLPs, it is essential to examine a specific report over time. For this project, we focus on the Federal Open Market Committee's (FOMC) data, which serves as a primary indicator of the Fed’s communication strategies. The FOMC communicates through three main channels: speeches, meeting minutes, and press conference transcripts. Meeting minutes are particularly valuable for our analysis as they are published post-meeting and undergo thorough scrutiny by policymakers, in contrast to speeches and transcripts, which can exhibit greater volatility due to their real-time, human-delivered nature.
 
@@ -36,12 +36,12 @@ The central question of this project—whether there is evidence of the Federal 
 The primary approach hinges on the notion that any shift in the Federal Reserve's signaling strategy would render recent texts distinct from earlier ones. Consequently, some discernible difference should be present. In this context, "observable" does not imply noticeable to humans but detectable by NLP models and LLMs. Thus, the analysis employs various criteria specifically designed to influence these models.
 
 The tests include:
-Lexical diversity
-Average sentence length
-Usage of idioms
-Readability Score 
-Topic modeling
-Sentiment analysis
+- Lexical diversity
+- Average sentence length
+- Usage of idioms
+- Readability Score 
+- Topic modeling
+- Sentiment analysis
 
 Lexical Diversity & ASL
 
