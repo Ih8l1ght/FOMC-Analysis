@@ -57,27 +57,28 @@ Following this, topic modeling was applied based on the premise that text compri
 
 #### 1. Flesch-Kincaid Grade Level
 Estimates the US school level to comprehend the text:
-![FKGL Formula](https://latex.codecogs.com/png.latex?\text{FKGL}=0.39\left(\frac{W}{S}\right)+11.8\left(\frac{Syll}{W}\right)-15.59)
+![FKGL Formula](https://latex.codecogs.com/png.latex?\bg{transparent}\text{FKGL}=0.39\left(\frac{W}{S}\right)+11.8\left(\frac{Syll}{W}\right)-15.59)
 
 #### 2. Gunning Fog Index
 Estimates the years of formal education required to understand a text on a first reading:
-![GFI Formula](https://latex.codecogs.com/png.latex?\text{GFI}=0.4\left(\left(\frac{W}{S}\right)+100\left(\frac{CW}{W}\right)\right))
+![GFI Formula](https://latex.codecogs.com/png.latex?\bg{transparent}\text{GFI}=0.4\left(\left(\frac{W}{S}\right)+100\left(\frac{CW}{W}\right)\right))
 
 #### 3. SMOG Index
 Estimates the years of education needed to understand a text:
-![SMOG Formula](https://latex.codecogs.com/png.latex?\text{SMOG}=1.0430\cdot\sqrt{\frac{PSW\times30}{S}}+3.1291)
+![SMOG Formula](https://latex.codecogs.com/png.latex?\bg{transparent}\text{SMOG}=1.0430\cdot\sqrt{\frac{PSW\times30}{S}}+3.1291)
 
 #### 4. Coleman-Liau Index
 Estimates the US school grade level necessary to understand a text, based on characters per word:
-![CLI Formula](https://latex.codecogs.com/png.latex?\text{CLI}=0.0588\left(\frac{C}{W}\times100\right)-0.296\left(\frac{S}{W}\times100\right)-15.8)
+![CLI Formula](https://latex.codecogs.com/png.latex?\bg{transparent}\text{CLI}=0.0588\left(\frac{C}{W}\times100\right)-0.296\left(\frac{S}{W}\times100\right)-15.8)
 
 #### 5. Automated Readability Index
 Provides a readability score based on characters per word and words per sentence:
-![ARI Formula](https://latex.codecogs.com/png.latex?\text{ARI}=4.71\left(\frac{C}{W}\right)+0.5\left(\frac{W}{S}\right)-21.43)
+![ARI Formula](https://latex.codecogs.com/png.latex?\bg{transparent}\text{ARI}=4.71\left(\frac{C}{W}\right)+0.5\left(\frac{W}{S}\right)-21.43)
 
 #### 6. Dale-Chall Readability Score
 Estimates the comprehension level required, considering familiar words and sentence complexity:
-![DCRS Formula](https://latex.codecogs.com/png.latex?\text{DCRS}=0.1579\left(\frac{DW}{W}\times100\right)+0.0496\left(\frac{W}{S}\right))
+![DCRS Formula](https://latex.codecogs.com/png.latex?\bg{transparent}\text{DCRS}=0.1579\left(\frac{DW}{W}\times100\right)+0.0496\left(\frac{W}{S}\right))
+
 
 
 The scores were normalized in order to be comparable. From 2014 till 2020, however afterwards the indices diverge, which is quite unusual as essentially they measure the same thing. Dale-Chall readability score alongside Coleman-Liau index somewhat increase after 2020, whereas all the other decrease sharply. The logical explanation is that the structure of the text has changed in a way that there has been an increase in specialized vocabulary, leading to longer words but shorter sentences (as Dale-Chall increased but Automated Readability Index increased). As the indices that compute what percentage of words are complex and outside daily words, a possible explanation is that as minutes implemented more complex technical terms, there was less need for multiple terms explaining the same phenomena. . 
