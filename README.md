@@ -25,7 +25,7 @@ One of the earliest explorations of using Natural Language Processing (NLP) in f
 
 A clear example of this is Doh et al. (2021), who compared Federal Reserve statements to alternative statements with slightly altered tones, demonstrating that NLP models can detect even subtle differences. Kim and Gallen (2023) conducted a study to assess the precision of these models by manually labeling a sample of Fed statements, finding that different models produced varying results. There have also been efforts to adapt existing NLP models to better interpret central bank language, with CentralBankRoBERTa (Pfeifer & Marohl, 2023) being a notable example.
 
-## Methodology 
+## Methodology & Results
 
 To determine whether the Federal Reserve is adapting its signaling approach and modifying the formulation of its official reports and speeches in response to the increasing use of NLPs, it is essential to examine a specific report over time. For this project, we focus on the Federal Open Market Committee's (FOMC) data, which serves as a primary indicator of the Fed’s communication strategies. The FOMC communicates through three main channels: speeches, meeting minutes, and press conference transcripts. Meeting minutes are particularly valuable for our analysis as they are published post-meeting and undergo thorough scrutiny by policymakers, in contrast to speeches and transcripts, which can exhibit greater volatility due to their real-time, human-delivered nature.
 
@@ -43,11 +43,10 @@ The primary approach hinges on the notion that any shift in the Federal Reserve'
 - Topic modeling
 - Sentiment analysis
 
-Lexical Diversity & ASL
+### Lexical Diversity & ASL
 
 The initial step involves converting the PDFs, automatically downloaded from the Federal Reserve’s website, into text files for greater analytical flexibility. This process is straightforward. The analysis then employs two simpler metrics: lexical diversity and average sentence length. Lexical diversity is calculated by dividing the number of unique words by the total number of words. Initially, results showed extreme volatility in both metrics. Upon further examination, the inclusion of Fed predictions in samples up to 2020 significantly reduced average sentence length. After excluding samples with an average sentence length (ASL) of less than 20, we observed a downward trend line with persistent volatility. Notably, the lexical diversity score exhibited high volatility due to the use of various niche theoretical terms, but it stabilized at a high level post-2021.
 
-## Results:
 
 ### Topic Modeling
 
@@ -58,33 +57,32 @@ Following this, topic modeling was applied based on the premise that text compri
 #### 1. Flesch-Kincaid Grade Level
 Estimates the US school level to comprehend the text:
 
-![FKGL Formula](https://latex.codecogs.com/png.latex?\bg{white}\text{FKGL}=0.39\left(\frac{W}{S}\right)+11.8\left(\frac{Syll}{W}\right)-15.59)
+$ \text{FKGL} = 0.39 \left( \frac{W}{S} \right) + 11.8 \left( \frac{Syll}{W} \right) - 15.59 $
 
 #### 2. Gunning Fog Index
 Estimates the years of formal education required to understand a text on a first reading:
 
-![GFI Formula](https://latex.codecogs.com/png.latex?\bg{white}\text{GFI}=0.4\left(\left(\frac{W}{S}\right)+100\left(\frac{CW}{W}\right)\right))
+$text{GFI} = 0.4 \left( \left( \frac{W}{S} \right) + 100 \left( \frac{CW}{W} \right) \right)$
 
 #### 3. SMOG Index
 Estimates the years of education needed to understand a text:
 
-![SMOG Formula](https://latex.codecogs.com/png.latex?\bg{white}\text{SMOG}=1.0430\cdot\sqrt{\frac{PSW\times30}{S}}+3.1291)
+$\text{SMOG} = 1.0430 \cdot \sqrt{ \frac{PSW \times 30}{S} } + 3.1291 $
 
 #### 4. Coleman-Liau Index
 Estimates the US school grade level necessary to understand a text, based on characters per word:
 
-![CLI Formula](https://latex.codecogs.com/png.latex?\bg{white}\text{CLI}=0.0588\left(\frac{C}{W}\times100\right)-0.296\left(\frac{S}{W}\times100\right)-15.8)
+$\text{CLI} = 0.0588 \left( \frac{C}{W} \times 100 \right) - 0.296 \left( \frac{S}{W} \times 100 \right) - 15.8 $
 
 #### 5. Automated Readability Index
 Provides a readability score based on characters per word and words per sentence:
 
-![ARI Formula](https://latex.codecogs.com/png.latex?\bg{white}\text{ARI}=4.71\left(\frac{C}{W}\right)+0.5\left(\frac{W}{S}\right)-21.43)
+$\text{ARI} = 4.71 \left( \frac{C}{W} \right) + 0.5 \left( \frac{W}{S} \right) - 21.43 $
 
 #### 6. Dale-Chall Readability Score
 Estimates the comprehension level required, considering familiar words and sentence complexity:
 
-![DCRS Formula](https://latex.codecogs.com/png.latex?\bg{white}\text{DCRS}=0.1579\left(\frac{DW}{W}\times100\right)+0.0496\left(\frac{W}{S}\right))
-
+$\text{DCRS} = 0.1579 \left( \frac{DW}{W} \times 100 \right) + 0.0496 \left( \frac{W}{S} \right) $
 
 
 
