@@ -1,7 +1,7 @@
 # FOMC-Analysis
 
 
-## Introduction
+## Introduction and brief history
 
 From the dawn of ancient civilizations, expectations have fundamentally shaped the decision-making processes of consumers, investors, governments, and other economic actors. In the annals of classical thought, Aristotle alludes to the prescient activities of Thales of Miletus, who, through “precise” astronomical observations, anticipated a bountiful olive harvest. This prediction allowed Thales to capitalize on the future scarcity of olive presses, thereby influencing market prices. Such anecdotes underscore the enduring significance of expectations in economic behavior.
 
@@ -35,7 +35,7 @@ The central question of this project—whether there is evidence of the Federal 
 
 The primary approach hinges on the notion that any shift in the Federal Reserve's signaling strategy would render recent texts distinct from earlier ones. Consequently, some discernible difference should be present. In this context, "observable" does not imply noticeable to humans but detectable by NLP models and LLMs. Thus, the analysis employs various criteria specifically designed to influence these models.
 
-The tests include:
+**The tests include:**
 - Lexical diversity
 - Average sentence length
 - Usage of idioms
@@ -47,9 +47,9 @@ Lexical Diversity & ASL
 
 The initial step involves converting the PDFs, automatically downloaded from the Federal Reserve’s website, into text files for greater analytical flexibility. This process is straightforward. The analysis then employs two simpler metrics: lexical diversity and average sentence length. Lexical diversity is calculated by dividing the number of unique words by the total number of words. Initially, results showed extreme volatility in both metrics. Upon further examination, the inclusion of Fed predictions in samples up to 2020 significantly reduced average sentence length. After excluding samples with an average sentence length (ASL) of less than 20, we observed a downward trend line with persistent volatility. Notably, the lexical diversity score exhibited high volatility due to the use of various niche theoretical terms, but it stabilized at a high level post-2021.
 
-Results:
+## Results:
 
-Topic Modeling
+### Topic Modeling
 
 Following this, topic modeling was applied based on the premise that text comprises a mixture of topics, each representing a distribution of words. Various methods were tested: initially, Latent Dirichlet Allocation (LDA) was utilized to categorize the words in each meeting minute into topics. To capture more niche topics and identify differences, the number of passes and topics was increased. However, even after expanding the number of topics to 20 and doubling the passess, the outcomes remained largely consistent. Due to the generation of a high number of topics (1760), a detailed examination of each is impractical. Given their similarities and minimal differences, a word cloud effectively summarizes all generated topics in a single visualization.
 
