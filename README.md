@@ -85,8 +85,8 @@ Estimates the comprehension level required, considering familiar words and sente
 $\text{DCRS} = 0.1579 \left( \frac{DW}{W} \times 100 \right) + 0.0496 \left( \frac{W}{S} \right) $
 
 
+The scores were normalized to enable comparability. From 2014 to 2020, the indices tracked closely, but diverged afterward—a notable anomaly given that they do measure the same parameters. The Dale-Chall readability score and the Coleman-Liau index slightly increased post-2020, while others, such as the Automated Readability Index, sharply decreased. This divergence suggests a structural change in the text: the introduction of more specialized vocabulary, leading to longer words but shorter sentences (as indicated by the increase in the Dale-Chall score but the decrease in the Automated Readability Index). Given that the indices measuring the proportion of complex, non-everyday words show an increase in specialized terms, the shift likely reflects a reduction in redundant explanations of the same concepts.
 
-The scores were normalized in order to be comparable. From 2014 till 2020, however afterwards the indices diverge, which is quite unusual as essentially they measure the same thing. Dale-Chall readability score alongside Coleman-Liau index somewhat increase after 2020, whereas all the other decrease sharply. The logical explanation is that the structure of the text has changed in a way that there has been an increase in specialized vocabulary, leading to longer words but shorter sentences (as Dale-Chall increased but Automated Readability Index increased). As the indices that compute what percentage of words are complex and outside daily words, a possible explanation is that as minutes implemented more complex technical terms, there was less need for multiple terms explaining the same phenomena. . 
 
 
 
