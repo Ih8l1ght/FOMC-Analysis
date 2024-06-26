@@ -3,7 +3,7 @@
 
 ## Introduction and brief history
 <details>
-<summary style="font-size: 20px; font-style: italic">Lengthy history of importance of expectations</summary>
+<summary style="font-size: 20px; font-style: italic;">Lengthy history of importance of expectations</summary>
 
 From the dawn of ancient civilizations, expectations have fundamentally shaped the decision-making processes of consumers, investors, governments, and other economic actors. In the annals of classical thought, Aristotle alludes to the prescient activities of Thales of Miletus, who, through “precise” astronomical observations, anticipated a bountiful olive harvest. This prediction allowed Thales to capitalize on the future scarcity of olive presses, thereby influencing market prices. Such anecdotes underscore the enduring significance of expectations in economic behavior.
 
