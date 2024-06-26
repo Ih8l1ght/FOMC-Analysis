@@ -61,7 +61,7 @@ Following this, topic modeling was applied based on the premise that text compri
 #### 1. Flesch-Kincaid Grade Level
 Estimates the US school level to comprehend the text:
 
-$ \text{FKGL} = 0.39 \left( \frac{W}{S} \right) + 11.8 \left( \frac{Syll}{W} \right) - 15.59 $
+$\text{FKGL} = 0.39 \left( \frac{W}{S} \right) + 11.8 \left( \frac{Syll}{W} \right) - 15.59 $
 
 #### 2. Gunning Fog Index
 Estimates the years of formal education required to understand a text on a first reading:
