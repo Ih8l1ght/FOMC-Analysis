@@ -2,6 +2,8 @@
 
 
 ## Introduction and brief history
+<details>
+<summary>Click to expand</summary>
 
 From the dawn of ancient civilizations, expectations have fundamentally shaped the decision-making processes of consumers, investors, governments, and other economic actors. In the annals of classical thought, Aristotle alludes to the prescient activities of Thales of Miletus, who, through “precise” astronomical observations, anticipated a bountiful olive harvest. This prediction allowed Thales to capitalize on the future scarcity of olive presses, thereby influencing market prices. Such anecdotes underscore the enduring significance of expectations in economic behavior.
 
@@ -16,6 +18,8 @@ The objectives of the Federal Reserve (Fed) are straightforward: promoting maxim
 Conversely, direct communication by the Federal Reserve carries inherent risks. Markets often overreact to such signals, leading to instability. This dynamic was evident in 2014 when the Fed announced a scaling back of its expansionary monetary policy and quantitative easing. Markets overinterpreted this shift, resulting in significant global volatility, an event now known as the "taper tantrum."
 
 Therefore, it is expected that the Federal Reserve will interpret its own signaling from the perspective of economic agents. With the proliferation of Large Language Models (LLMs) and Natural Language Processing (NLP) in financial markets for tasks ranging from predicting stock prices to analyzing policymakers’ speeches, the Fed logically would scrutinize its communications using exactly the same tools..
+
+</details>
 
 ## Relevant Research
 
