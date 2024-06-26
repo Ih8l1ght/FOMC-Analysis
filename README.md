@@ -1,9 +1,9 @@
 # FOMC-Analysis
 
 
-
+## Introduction and brief history
 <details>
-<summary>## Introduction and brief history</summary>
+<summary style="font-size: 20px;">Click to expand</summary>
 
 From the dawn of ancient civilizations, expectations have fundamentally shaped the decision-making processes of consumers, investors, governments, and other economic actors. In the annals of classical thought, Aristotle alludes to the prescient activities of Thales of Miletus, who, through “precise” astronomical observations, anticipated a bountiful olive harvest. This prediction allowed Thales to capitalize on the future scarcity of olive presses, thereby influencing market prices. Such anecdotes underscore the enduring significance of expectations in economic behavior.
 
